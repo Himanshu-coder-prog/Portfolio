@@ -1,0 +1,318 @@
+*{
+      margin: 0;
+      padding: 0;
+    }
+
+    header{
+    /* border-bottom: 1.5px solid; */
+    background-color: rgb(4, 4, 126);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    }
+
+    body{
+      background-color: rgba(2, 5, 52, 0.952); 
+      color: white; 
+      /* display: flex;        for responsive design but not working   
+      flex-wrap: wrap; */
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+    }
+
+    nav ul{
+      display: flex;
+      justify-content: center;
+    }
+
+    /* nav ul li{
+      list-style: none;
+      margin: 0 23px;
+    } */
+
+    /* .left{
+      font-size: 1.5rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    } */
+
+    .left {
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  color: white;
+  padding: 10px 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shine 2s linear infinite;
+}
+
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+    nav ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+nav ul li::after {
+  content: '';
+  position: absolute;
+  width: 15%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover{
+  color: yellow;
+}
+
+hr{
+  border: 0;
+  background-color: rgb(224, 228, 241);
+  height: 1.2px;
+  margin: 40px 84px;
+}
+
+.firstSection{
+  display: flex;
+  justify-content: space-around;
+  margin: 140px 0 90px 0;
+  align-items: center;
+  /* border-bottom: 1.5px solid; */
+  /* padding: 0 0 42px 0;  */
+}
+
+.firstSection > div{
+  width: 30%;
+}
+ 
+.leftSection{
+  font-size: 2.2rem;
+}
+
+.leftSection .btn{
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.rightSection img{
+  width: 80%;
+}
+
+.purple{
+  color: rgb(137, 64, 253);
+}
+
+#element{
+  color: rgb(137, 64, 253);;
+}
+
+.secondSection{
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+
+.secondSection h1{
+  font-size: 1.9rem;
+}
+
+.secondSection .box{
+  background-color: white;
+  width: 80vw;
+  height: 2px;
+  margin: 40px;
+}
+
+.secondSection p{
+  font-size: 1.5rem;
+}
+
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 21px;
+  margin-bottom: 10px;
+  /* text-decoration: underline; */
+  }
+
+.line-vertical {
+  width: 4px;
+  height: 40px;
+  background: #7747a4;
+  margin-bottom: 10px;
+}
+
+.horizontal-line {
+  width: 650px;
+  height: 4px;
+  background: #7747a4;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.branches {
+  display: flex;
+  justify-content: space-between;
+  width: 615px;
+}
+
+.branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.branch-line {
+  width: 4px;
+  height: 30px;
+  background: #7747a4;
+  margin-bottom: 5px;
+}
+
+.branch img {
+  margin-top: 15px;
+}
+
+.heading{
+  font-size: 1.7rem;
+  margin-left: 60px;
+}
+
+#heading{
+  color: coral;
+}
+
+.fourthSection p{
+  font-size: 1.8rem;
+  color: rgb(211, 190, 5);
+}
+
+.fourthSection{
+  max-width: 80vw;
+  margin: 50px 0px -30px 115px;
+  height: 80vh;
+
+}
+
+.project {
+  background-color: rgb(249, 249, 249);
+  width: 50vw;
+  height: 2px;
+  margin: 10px 0;
+  display: flex;
+}
+
+.fourthSection .vertical{
+  height: 80px;
+  width: 1.9px;
+  background-color: rgb(102, 75, 255);
+  margin: 0 130px;
+}
+
+.vertical-title{
+    position: relative;
+    top: 90px;
+    width: 110px;
+    font-size: 1.2rem;
+}
+
+
+footer{
+  background-color: rgb(4, 4, 126);
+}
+
+.flex{
+  display: flex;
+  padding: 23px 10px;
+  justify-content: space-evenly;
+}
+
+.flex li{
+  list-style: none;
+  padding: 3px;
+}
+
+.flex >div{
+  width: 182px;
+}
+
+footer .footer-rights{
+  text-align: center;
+  color: rgb(127, 171, 200);
+  padding: 12px 0;
+  cursor: pointer;  
+}
+
+footer .footer-rights:hover{
+  color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
